@@ -10,32 +10,47 @@ a {
 
 /* Navbar */
 nav {
-  justify-content: center;
-  display: flex;
+  padding: 1em 1em; /* Some padding around the navbar */
 }
 
 nav .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Flex container */
+  align-items: center; /* Center content vertically */
+  max-width: 100%; /* Occupy entire view width */
+}
+
+.navbar .logo {
+  max-width: 70%; /* Limit the size of the logo */
+}
+
+.logo-container {
+  justify-content: center; /* Center logo div locally  */
+  display: flex; /* Flexbox to allow centering of logo container */
 }
 
 .navbar-content {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  font-size: 14px;
-  padding: 2em;
+  flex-grow: 1; /* Ensures the ul elements take up available space */
+  display: flex; /* Flex container - enables justify content */
+  justify-content: center; /* Centers ul elements */
+  font-size: var(--medium-font-size);
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2em;
+  display: flex; /* Flex container for ul elements so they don't stack vertically */
+  list-style: none; /* Remove bullet points */
+  gap: 3em;
 }
 
-nav .container .logo {
-  max-width: 70%;
+.booking {
+  margin-left: auto; /* Booking button pushed to the right */
+}
+
+nav a {
+  color: var(--black); /* Color the nav links */
+}
+
+nav a:hover {
+  color: #007bff; /* Hover effect */
 }
 
 /* Hero */
@@ -71,8 +86,100 @@ section {
 }
 
 /* Scaling */
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 660px) {
   .navbar-content {
-    display: none;
+    display: none; /* Remove top navbar links */
   }
+}
+
+@media only screen and (max-width: 1020px) {
+  .navbar-content {
+    font-size: var(--small-font-size);
+  }
+  .navbar .booking {
+    font-size: var(--small-font-size);
+  }
+  .navbar .logo {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 872px) {
+  .navbar-content {
+    font-size: var(--extra-small-font-size);
+  }
+  .navbar .booking {
+    font-size: var(--extra-small-font-size);
+  }
+  .navbar .logo {
+    max-width: 30%;
+  }
+}
+
+/* Color Variables */
+:root {
+  --yellow: #f8dd9f;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Backgrounds */
+.background-white {
+  background-color: var(--white);
+}
+
+.background-yellow {
+  background-color: var(--yellow);
+}
+
+.background-black {
+  background-color: var(--black);
+}
+
+/* Text Colors */
+.color-white {
+  color: var(--white);
+}
+
+.color-yellow {
+  color: var(--yellow);
+}
+
+.color-black {
+  color: var(--black);
+}
+
+/* Font Sizes */
+:root {
+  --medium-font-size: 14px;
+  --small-font-size: 11px;
+  --extra-small-font-size: 8px;
+}
+.xsm {
+  font-size: 10px;
+}
+
+.sm {
+  font-size: 20px;
+}
+
+.m {
+  font-size: 30px;
+}
+
+.l {
+  font-size: 40px;
+}
+
+.xl {
+  font-size: 50px;
+}
+
+.xxl {
+  font-size: 60px;
+}
+
+/* Font Line Gaps */
+.nl {
+  line-height: 1em;
 }
