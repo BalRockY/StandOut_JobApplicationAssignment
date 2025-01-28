@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  justify-content: center;
+  display: flex;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 2em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+nav .container .logo {
+  max-width: 70%;
+}
+
+/* Hero */
+#section1 {
+  padding: 13em 6em;
+}
+
+hero .container {
+  max-width: 50em;
+}
+
+.bg-hero {
+  background: url("/images/topbillede.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 72rem;
+  padding: 0 1em;
+  border: 2px solid red;
+}
+
+/* Section */
+section {
+  padding: 4rem 0;
+}
+
+/* Footer */
+.footer-main {
+  display: flex;
+}
+
+/* Scaling */
+@media only screen and (max-width: 40em) {
+  .navbar-content {
+    display: none;
+  }
+}

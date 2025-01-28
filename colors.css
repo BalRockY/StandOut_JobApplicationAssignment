@@ -1,0 +1,32 @@
+/* Color Variables */
+:root {
+  --yellow: #f8dd9f;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Backgrounds */
+.background-white {
+  background-color: var(--white);
+}
+
+.background-yellow {
+  background-color: var(--yellow);
+}
+
+.background-black {
+  background-color: var(--black);
+}
+
+/* Text Colors */
+.color-white {
+  color: var(--white);
+}
+
+.color-yellow {
+  color: var(--yellow);
+}
+
+.color-black {
+  color: var(--black);
+}
