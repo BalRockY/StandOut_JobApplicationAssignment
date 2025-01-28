@@ -7,8 +7,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="colors.css" />
-    <link rel="stylesheet" href="font-sizes.css" />
 
     <!-- Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,12 +16,45 @@
       rel="stylesheet"
     />
 
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
     <title>Document</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar poppins-regular">
       <div class="container">
+        <!-- Mobile Menu -->
+        <nav class="poppins-regular">
+          <div class="container">
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu poppins-regular">
+                <li>
+                  <a href="index.html"> Menupunkt #1 </a>
+                </li>
+                <li>
+                  <a href="#">Menupunkt #2</a>
+                </li>
+                <li>
+                  <a href="#">Menupunkt #3</a>
+                </li>
+                <li>
+                  <a href="#">Menupunkt #4</a>
+                </li>
+                <li>
+                  <a href="#">Menupunkt #5</a>
+                </li>
+                <li>
+                  <a href="/booking">BOOK ET MØDE</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <div class="logo-container">
           <img src="images/rooster-logo.png" alt="logo" class="logo" />
         </div>
@@ -46,6 +77,8 @@
             </li>
           </ul>
         </div>
+        <!-- Hamburger Icon -->
+
         <div class="booking">
           <a href="/booking">BOOK ET MØDE</a>
         </div>

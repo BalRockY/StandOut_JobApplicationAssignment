@@ -119,33 +119,3 @@
   font-weight: 900;
   font-style: italic;
 }
-
-/* Font Sizes */
-xsm {
-  font-size: 10px;
-}
-
-.sm {
-  font-size: 20px;
-}
-
-.m {
-  font-size: 30px;
-}
-
-.l {
-  font-size: 40px;
-}
-
-.xl {
-  font-size: 50px;
-}
-
-.xxl {
-  font-size: 60px;
-}
-
-/* Font Line Gaps */
-.nl {
-  line-height: 1em;
-}
