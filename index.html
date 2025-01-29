@@ -23,16 +23,17 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar poppins-regular">
+    <nav class="navbar">
       <div class="container">
         <!-- Mobile Menu -->
-        <nav class="poppins-regular">
+        <nav class="">
           <div class="container">
+            <!-- Hamburger Icon -->
             <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
-              <ul class="mobile-menu poppins-regular">
+              <ul class="mobile-menu">
                 <li>
                   <a href="index.html"> Menupunkt #1 </a>
                 </li>
@@ -77,10 +78,10 @@
             </li>
           </ul>
         </div>
-        <!-- Hamburger Icon -->
-
-        <div class="booking">
-          <a href="/booking">BOOK ET MØDE</a>
+        <div id="booking">
+          <button class="button button-black" id="navbutton">
+            BOOK ET MØDE
+          </button>
         </div>
       </div>
     </nav>
@@ -89,14 +90,14 @@
     <section class="bg-hero" id="section1">
       <hero class="hero">
         <div class="container color-white">
-          <h1 class="dm-serif-display-regular xxl nl">
+          <h1 class="dm-serif-display-regular">
             Making it right entirely in Copenhagen since 1997
           </h1>
-          <p class="poppins-regular s">
+          <p class="" id="hero-subtext">
             Every product embodies our spirit family legacy, traditional
             craftmanship, and a genuine commitment to sustainability
           </p>
-          <button>BOOK ET MØDE</button>
+          <button class="button button-white">BOOK ET MØDE</button>
         </div>
       </hero>
     </section>
@@ -104,21 +105,25 @@
     <!-- Section2 -->
     <section class="background-yellow" id="section2">
       <div class="container">
-        <h1 class="text-lg">Pursuit of excellence</h1>
+        <h2 class="">Pursuit of excellence</h2>
         <p class="">
           The idea of "form follows function" a principle associated with the
           modernist design movement, was the starting place for out Voda
           collection. Its classic geometry and clean finishes unite into an
           industrial modern style, crafted for Australian living.
         </p>
-        <button>KONTAKT OS</button>
+        <button class="button button-black">KONTAKT OS</button>
       </div>
     </section>
 
     <!-- Section3 -->
     <section class="" id="section3">
+      <div id="horizontal-image"></div>
+      <div id="image-container-section-3">
+        <div><img src="/images/splitsektion-1.jpg" alt="" /></div>
+      </div>
       <div class="container">
-        <h1 class="text-lg">Modern refinement</h1>
+        <h2 class="">Modern refinement</h2>
         <p class="">
           Sammen med vores kunder og den samlede viden fra vores 18.500
           arkitekter, ingeniører og øvrige specialister, skaber vi løsninger der
@@ -126,15 +131,16 @@
           vores byer og samfund mere bæredygtige. <br /><br />
           Transformin Society Together
         </p>
+        <button class="button button-black">KONTAKT OS</button>
       </div>
     </section>
 
     <!-- Section4 -->
     <section class="" id="section4">
       <div class="container">
-        <h1 class="text-lg">Ydelser</h1>
-        <h1 class="text-lg">Service</h1>
-        <h1 class="text-lg">Kontakt os</h1>
+        <h1 class="">Ydelser</h1>
+        <h1 class="">Service</h1>
+        <h1 class="">Kontakt os</h1>
         <p class=""></p>
       </div>
     </section>
@@ -142,7 +148,7 @@
     <!-- Section5 -->
     <section class="" id="section5">
       <div class="container">
-        <h1 class="text-lg">Modern refinement</h1>
+        <h2 class="">Modern refinement</h2>
         <p class="">
           Sammen med vores kunder og den samlede viden fra vores 18.500
           arkitekter, ingeniører og øvrige specialister, skaber vi løsninger der
@@ -150,13 +156,14 @@
           vores byer og samfund mere bæredygtige. <br /><br />
           Transformin Society Together
         </p>
+        <button class="button button-black">KONTAKT OS</button>
       </div>
     </section>
 
     <!-- Section6 -->
     <section class="background-yellow" id="section6">
       <div class="container">
-        <h1 class="text-lg">Get in touch</h1>
+        <h1 class="">Get in touch</h1>
         <p class="">
           We are awwwards and we are here to serve! How can we help you?
         </p>
@@ -168,7 +175,7 @@
         <input placeholder="Dit telefonnummer" />
         <input placeholder="Din email*" />
         <input placeholder="Eventuel besked*" />
-        <button>KONTAKT OS</button>
+        <button class="button button-black">KONTAKT OS</button>
       </div>
     </section>
 

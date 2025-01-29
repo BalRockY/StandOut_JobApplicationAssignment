@@ -8,9 +8,50 @@ a {
   text-decoration: none;
 }
 
+p {
+  /* Font: Poppins Regular  */
+  font-family: var(--regular-subfont);
+  font-weight: var(--regular-subfont-weight);
+  font-style: var(--regular-subfont-style);
+
+  font-size: clamp(0.4vw, 0.8vw, 1.2vw);
+}
+
+/* Buttons */
+.button {
+  border-radius: 0.8em;
+  max-width: 20em;
+  padding: 0.8em 3em;
+  font-size: 1vw;
+  align-items: center;
+  align-self: flex-start;
+
+  font-family: var(--regular-subfont);
+  font-weight: var(--semibold-subfont-weight);
+  font-style: var(--regular-subfont-style);
+}
+
+.button-black {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.button-white {
+  color: var(--black);
+  background-color: var(--white);
+}
+
 /* Navbar */
 nav {
   padding: 1em 1em; /* Some padding around the navbar */
+}
+
+.navbar {
+  /* Font: Poppins Regular  */
+  font-family: var(--regular-subfont);
+  font-weight: var(--regular-subfont-weight);
+  font-style: var(--regular-subfont-style);
+  font-size: var(--font-size-m);
 }
 
 nav .container {
@@ -27,7 +68,6 @@ nav .container {
   flex-grow: 1; /* Ensures the ul elements take up available space */
   display: flex; /* Flex container - enables justify content */
   justify-content: center; /* Centers ul elements */
-  font-size: var(--medium-font-size);
 }
 
 nav ul {
@@ -36,7 +76,7 @@ nav ul {
   gap: 3em;
 }
 
-.booking {
+#booking {
   margin-left: auto; /* Booking button pushed to the right */
 }
 
@@ -87,28 +127,89 @@ nav a:hover {
 
 /* Hero */
 #section1 {
-  padding: 13em 6em;
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  padding-left: 7vw;
 }
 
-hero .container {
-  max-width: 50em;
+.hero .container {
+  max-width: clamp(20vw, 70vw, 100vw);
+}
+
+h1 {
+  font-size: 5vw;
+  line-height: 1em;
+
+  /* Font: DM Serif Display Regular */
+  font-family: var(--headline-font);
+  font-weight: var(--headline-weight);
+  font-style: var(--headline-style);
+}
+
+h2 {
+  font-size: 3vw;
+  line-height: 1em;
+
+  /* Font: DM Serif Display Regular */
+  font-family: var(--headline-font);
+  font-weight: var(--headline-weight);
+  font-style: var(--headline-style);
+}
+
+#hero-subtext {
+  padding-top: 0.5em;
+  padding-bottom: 1.3em;
+  max-width: 50vw;
+  font-size: 1.5vw;
 }
 
 .bg-hero {
   background: url("/images/topbillede.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Container */
 .container {
-  max-width: 72rem;
+  max-width: 45vw;
   padding: 0 1em;
+  border: 2px solid red;
 }
 
 /* Section */
 section {
-  padding: 4rem 0;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+#section2 {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+#section3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-right: 5em;
+}
+#section3 img {
+  max-width: 70%;
+}
+#section3 .container {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  max-width: clamp(20vw, 36.7vw, 50vw);
+}
+
+section p {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 /* Footer */
@@ -117,36 +218,55 @@ section {
 }
 
 /* Scaling */
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 900px) {
   .navbar-content {
     display: none; /* Remove top navbar links */
   }
   #hamburger-icon {
     display: block;
   }
+  #section3 {
+    display: grid;
+    place-items: center;
+    padding-right: 0;
+    border: 2px solid blue;
+  }
+  #section3 .container {
+    padding-top: 2vw;
+    max-width: 45%;
+  }
+
+  #horizontal-image {
+    background-image: url("images/splitsektion-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-width: 77vw;
+    min-height: 20vw;
+    border: 2px solid blue;
+  }
+  #section3 img {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1150px) {
   .navbar-content {
-    font-size: var(--small-font-size);
+    font-size: var(--font-size-s);
   }
-  .navbar .booking {
-    font-size: var(--small-font-size);
+  .navbar .logo {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #navbutton {
+    font-size: var(--font-size-xs);
+  }
+  .navbar-content {
+    font-size: var(--font-size-xs);
   }
   .navbar .logo {
     max-width: 50%;
-  }
-}
-
-@media only screen and (max-width: 872px) {
-  .navbar-content {
-    font-size: var(--extra-small-font-size);
-  }
-  .navbar .booking {
-    font-size: var(--extra-small-font-size);
-  }
-  .navbar .logo {
-    max-width: 30%;
   }
 }
 
@@ -185,35 +305,34 @@ section {
 
 /* Font Sizes */
 :root {
-  --medium-font-size: 14px;
-  --small-font-size: 11px;
-  --extra-small-font-size: 8px;
-}
-.xsm {
-  font-size: 10px;
-}
-
-.sm {
-  font-size: 20px;
-}
-
-.m {
-  font-size: 30px;
-}
-
-.l {
-  font-size: 40px;
-}
-
-.xl {
-  font-size: 50px;
-}
-
-.xxl {
-  font-size: 60px;
+  --font-size-xs: 0.7em;
+  --font-size-s: 0.8em;
+  --font-size-m: 0.9em;
+  --font-size-l: 2em;
+  --font-size-xl: 4em;
+  --font-size-xxl: 5em;
 }
 
 /* Font Line Gaps */
 .nl {
   line-height: 1em;
+}
+
+/* Fonts */
+:root {
+  /* Headlines: dm-serif-display-regular */
+  --headline-font: "DM Serif Display", serif;
+  --headline-weight: 400;
+  --headline-style: normal;
+
+  /* Body text: poppins-regular */
+  --regular-subfont: "Poppins", serif;
+  --regular-subfont-weight: 400;
+  --regular-subfont-style: normal;
+
+  /* poppins-bold */
+  --bold-subfont-weight: 700;
+
+  /* poppins-semibold */
+  --semibold-subfont-weight: 600;
 }
