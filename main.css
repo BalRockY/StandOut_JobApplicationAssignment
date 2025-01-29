@@ -216,8 +216,7 @@ section {
   padding: 0;
 }
 #section4 .container div {
-  flex: 1; /* Makes each div take equal space */
-  height: 100%; /* Adjust height as needed */
+  flex: 1; /* Makes each div take equal space */ /* Adjust height as needed */
   background-position: center; /* Centers the background images */
   background-repeat: no-repeat;
   aspect-ratio: 2000 / 2700;
@@ -245,6 +244,28 @@ section {
   background-size: cover;
 }
 
+#section5 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 5em;
+}
+#section5 img {
+  max-width: 70%;
+}
+#section5 .container {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  max-width: clamp(24em, 36.7vw, 100em);
+}
+
+#section3 .container .button,
+#section5 .container .button {
+  align-self: center;
+}
 section p {
   padding-top: 1vw;
   padding-bottom: 1vw;
@@ -263,25 +284,70 @@ section p {
   #hamburger-icon {
     display: block;
   }
+
   #section3 {
     display: grid;
     place-items: center;
     padding-right: 0;
     border: 2px solid blue;
+    padding-top: 0;
   }
   #section3 .container {
-    padding-top: 2vw;
+    display: flex;
+    padding-top: 10vw;
+    max-width: clamp(25em, 45vw, 100em);
+    text-align: center;
+    justify-content: center;
   }
 
-  #horizontal-image {
+  #horizontal-image_section3 {
     background-image: url("images/splitsektion-1.jpg");
     background-size: cover;
     background-position: center center;
-    min-width: 77vw;
-    min-height: 20vw;
+    min-width: 100vw;
+    min-height: 40vw;
     border: 2px solid blue;
   }
   #section3 img {
+    display: none;
+  }
+
+  #section4 .container {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    max-height: 30vh;
+  }
+  #ydelser,
+  #service,
+  #kontakt-os {
+    max-height: 20vw;
+  }
+
+  #section5 {
+    display: grid;
+    place-items: center;
+    padding-right: 0;
+    border: 2px solid blue;
+    padding-left: 0;
+  }
+  #section5 .container {
+    display: flex;
+    padding-bottom: 10vw;
+    max-width: clamp(25em, 45vw, 100em);
+    text-align: center;
+    justify-content: center;
+  }
+
+  #horizontal-image_section5 {
+    background-image: url("images/splitsektion-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-width: 100vw;
+    min-height: 40vw;
+    border: 2px solid blue;
+  }
+  #section5 img {
     display: none;
   }
 }
