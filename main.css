@@ -172,7 +172,7 @@ h2 {
 
 /* Container */
 .container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* Section */
@@ -289,7 +289,7 @@ section p {
     display: grid;
     place-items: center;
     padding-right: 0;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding-top: 0;
   }
   #section3 .container {
@@ -306,7 +306,7 @@ section p {
     background-position: center center;
     min-width: 100vw;
     min-height: 40vw;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
   #section3 img {
     display: none;
@@ -328,7 +328,7 @@ section p {
     display: grid;
     place-items: center;
     padding-right: 0;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding-left: 0;
   }
   #section5 .container {
@@ -345,7 +345,7 @@ section p {
     background-position: center center;
     min-width: 100vw;
     min-height: 40vw;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
   #section5 img {
     display: none;
