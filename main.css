@@ -14,7 +14,7 @@ p {
   font-weight: var(--regular-subfont-weight);
   font-style: var(--regular-subfont-style);
 
-  font-size: clamp(0.4vw, 0.8vw, 1.2vw);
+  font-size: clamp(0.6em, 0.8vw, 10em);
 }
 
 /* Buttons */
@@ -22,7 +22,7 @@ p {
   border-radius: 0.8em;
   max-width: 20em;
   padding: 0.8em 3em;
-  font-size: 1vw;
+  font-size: clamp(0.5em, 1vw, 10em);
   align-items: center;
   align-self: flex-start;
 
@@ -133,11 +133,11 @@ nav a:hover {
 }
 
 .hero .container {
-  max-width: clamp(20vw, 70vw, 100vw);
+  max-width: clamp(30em, 70vw, 100em);
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: clamp(1.8em, 5vw, 10em);
   line-height: 1em;
 
   /* Font: DM Serif Display Regular */
@@ -147,7 +147,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: clamp(1.4em, 3vw, 10em);
   line-height: 1em;
 
   /* Font: DM Serif Display Regular */
@@ -160,7 +160,7 @@ h2 {
   padding-top: 0.5em;
   padding-bottom: 1.3em;
   max-width: 50vw;
-  font-size: 1.5vw;
+  font-size: clamp(0.8em, 1.5vw, 10em);
 }
 
 .bg-hero {
@@ -172,8 +172,6 @@ h2 {
 
 /* Container */
 .container {
-  max-width: 45vw;
-  padding: 0 1em;
   border: 2px solid red;
 }
 
@@ -187,6 +185,9 @@ section {
   text-align: center;
   justify-content: center;
   display: flex;
+}
+#section2 .container {
+  max-width: clamp(25em, 45vw, 100em);
 }
 
 #section3 {
@@ -204,7 +205,44 @@ section {
   justify-content: center;
   display: flex;
   text-align: left;
-  max-width: clamp(20vw, 36.7vw, 50vw);
+  max-width: clamp(24em, 36.7vw, 100em);
+}
+#section4 {
+  padding: 0;
+}
+
+#section4 .container {
+  display: flex;
+  padding: 0;
+}
+#section4 .container div {
+  flex: 1; /* Makes each div take equal space */
+  height: 100%; /* Adjust height as needed */
+  background-position: center; /* Centers the background images */
+  background-repeat: no-repeat;
+  aspect-ratio: 2000 / 2700;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  display: flex;
+}
+#section4 h1 {
+  cursor: pointer;
+}
+
+#ydelser {
+  background-image: url(images/ydelser.jpg);
+  background-size: cover;
+}
+
+#service {
+  background-image: url(images/service.jpg);
+  background-size: cover;
+}
+
+#kontakt-os {
+  background-image: url(images/kontaktos.jpg);
+  background-size: cover;
 }
 
 section p {
@@ -233,7 +271,6 @@ section p {
   }
   #section3 .container {
     padding-top: 2vw;
-    max-width: 45%;
   }
 
   #horizontal-image {
