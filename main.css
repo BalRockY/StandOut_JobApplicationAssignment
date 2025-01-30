@@ -161,6 +161,15 @@ h2 {
   font-weight: var(--headline-weight);
   font-style: var(--headline-style);
 }
+h3 {
+  font-size: clamp(1em, 1.7vw, 100em);
+  line-height: 1em;
+
+  /* Font: DM Serif Display Regular */
+  font-family: var(--headline-font);
+  font-weight: var(--headline-weight);
+  font-style: var(--headline-style);
+}
 
 #hero-subtext {
   padding-top: 0.5em;
@@ -356,6 +365,40 @@ section p {
 /* Footer */
 .footer-main {
   display: flex;
+  padding-left: var(--padding-standard);
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  /* padding-right: var(--padding-standard); */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Equal distribution of the columns */
+}
+.footer-heading {
+  padding-bottom: 0.5em;
+}
+#footer-icons {
+  display: flex;
+  gap: 0.5em;
+  padding-top: 2em;
+}
+#footer-icons img {
+  max-width: clamp(1.2em, 1.5vw, 10em);
+}
+footer a {
+  font-family: var(--regular-subfont);
+  font-weight: var(--regular-subfont-weight);
+  font-style: var(--regular-subfont-style);
+  color: var(--white);
+  font-size: clamp(0.6em, 0.85vw, 10em);
+}
+.bold {
+  font-weight: 700;
+}
+.padding-bottom {
+  padding-bottom: 0.5em;
 }
 
 /* Scaling */
@@ -436,8 +479,9 @@ section p {
     flex-direction: column;
     width: 100%;
   }
+  /* Make it work for IOS */
   #section4 .container div {
-    min-height: 30vh;
+    min-height: 20vh;
     width: 100%;
     flex: 1 1 100%;
   }
