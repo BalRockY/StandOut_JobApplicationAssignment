@@ -25,37 +25,6 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="container">
-        <!-- Mobile Menu -->
-        <nav class="">
-          <div class="container">
-            <!-- Hamburger Icon -->
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-              <ul class="mobile-menu">
-                <li>
-                  <a href="index.html"> Menupunkt #1 </a>
-                </li>
-                <li>
-                  <a href="#">Menupunkt #2</a>
-                </li>
-                <li>
-                  <a href="#">Menupunkt #3</a>
-                </li>
-                <li>
-                  <a href="#">Menupunkt #4</a>
-                </li>
-                <li>
-                  <a href="#">Menupunkt #5</a>
-                </li>
-                <li>
-                  <a href="/booking">BOOK ET MØDE</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
         <div class="logo-container">
           <img src="images/rooster-logo.png" alt="logo" class="logo" />
         </div>
@@ -82,6 +51,33 @@
           <button class="button button-black" id="navbutton">
             BOOK ET MØDE
           </button>
+          <!-- Hamburger Icon -->
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div>
+              <img src="images/hamburger-icon.png" alt="hamburger-icon" />
+            </div>
+            <!-- Mobile Menu -->
+            <ul class="mobile-menu">
+              <li>
+                <a href="index.html"> Menupunkt #1 </a>
+              </li>
+              <li>
+                <a href="#">Menupunkt #2</a>
+              </li>
+              <li>
+                <a href="#">Menupunkt #3</a>
+              </li>
+              <li>
+                <a href="#">Menupunkt #4</a>
+              </li>
+              <li>
+                <a href="#">Menupunkt #5</a>
+              </li>
+              <li>
+                <a href="/booking">BOOK ET MØDE</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -165,19 +161,26 @@
 
     <!-- Section6 -->
     <section class="background-yellow" id="section6">
-      <div class="container">
+      <div class="container1">
         <h1 class="">Get in touch</h1>
-        <p class="">
-          We are awwwards and we are here to serve! How can we help you?
+        <p id="p1" class="">
+          We are awwwards and we are here to serve!<br />
+          How can we help you?
         </p>
-        <p class="">
-          If you have any questions, please contact us through this form. Please
-          complete the following fields.
+        <p id="p2">
+          If you have any questions, please contact us through this form.
+          <br /><br />Please complete the following fields.
         </p>
+      </div>
+      <div class="container2">
         <input placeholder="Dit navn*" />
         <input placeholder="Dit telefonnummer" />
         <input placeholder="Din email*" />
-        <input placeholder="Eventuel besked*" />
+        <textarea
+          id="textarea"
+          rows="3"
+          placeholder="Eventuel besked*"
+        ></textarea>
         <button class="button button-black">KONTAKT OS</button>
       </div>
     </section>
