@@ -434,10 +434,17 @@ section p {
   #section4 .container {
     padding: 0;
     flex-direction: column;
+    width: 100%;
+  }
+  #section4 .container div {
+    min-height: 30vh;
+    width: 100%;
+    flex: 1 1 100%;
   }
   #ydelser,
   #service,
   #kontakt-os {
+    width: 100%;
     max-height: 20vw;
   }
 
