@@ -126,28 +126,32 @@ nav a {
   background-color: var(--white);
   max-width: 80vw;
   min-width: 80vw;
-  padding-top: 5vw;
   gap: 0;
 }
-
-.mobile-menu li {
-  font-size: clamp(0.8em, 2vw, 10em);
+/* logo */
+.mobile-menu li:first-child {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
 }
+
 .mobile-menu li {
   padding-left: 5vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  font-size: clamp(0.8em, 2vw, 10em);
 }
 
 .mobile-menu li:not(:last-child) {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
 }
 
 #mobile-menu-button {
   font-size: clamp(0.8em, 1vw, 10em);
 }
 .mobile-menu img {
-  min-width: clamp(7em, 20%, 50em);
+  min-width: 10%;
+  max-width: 20%;
 }
 
 /* Hero */
@@ -412,6 +416,7 @@ footer a {
   color: var(--white);
   font-size: clamp(0.6em, 0.85vw, 10em);
 }
+
 .bold {
   font-weight: 700;
 }
@@ -602,7 +607,7 @@ nav a:hover {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .footer-main {
     flex-direction: column;
     text-align: center;
@@ -613,6 +618,13 @@ nav a:hover {
   }
   .footer-column {
     padding-bottom: 3.5vh;
+  }
+  .footer-column p,
+  .footer-column a {
+    font-size: 3vw;
+  }
+  .footer-column h3 {
+    font-size: 4.5vw;
   }
 }
 
