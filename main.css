@@ -222,6 +222,8 @@ section {
   text-align: center;
   justify-content: center;
   display: flex;
+  padding-left: var(--padding-standard);
+  padding-right: var(--padding-standard);
 }
 #section2 .container {
   max-width: clamp(25em, 45vw, 100em);
@@ -524,6 +526,8 @@ nav a:hover {
     text-align: center;
     justify-content: center;
     margin: 0;
+    padding-left: var(--padding-standard);
+    padding-right: var(--padding-standard);
   }
 
   #horizontal-image_section3 {
@@ -573,6 +577,8 @@ nav a:hover {
     max-width: clamp(25em, 45vw, 100em);
     text-align: center;
     margin: 0;
+    padding-left: var(--padding-standard);
+    padding-right: var(--padding-standard);
   }
 
   #horizontal-image_section5 {
